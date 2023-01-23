@@ -18,25 +18,18 @@ app.get("/products", async (req, res) => {
     res.send(products.slice(0, limit));
 });
 
-// app.get("/products/:pid", async (req, res)=> {
-//     let pid = req.params.pid
-//     let producto = await manager.getProduct().find(prod => prod.id === pid)
-//     res.send(producto)
-// })
-
-
 //Pagina con el producto solicitado por ID - ME TIRA SIEMPRE QUE NO EXISTE ESE ID
 app.get("/products/:pid", async (req, res) => {
-    let pid = req.params.pid;
+    let pid =  Number(req.params.pid) ;
     let product = await manager.getProductById(pid)
         if(product){
             res.send(product)
         }else{
-            res.send("No existe ese ID")
+            res.send(`No existen resultados para el ID: ${pid}`)
         }
 })
 
-const server = app.listen(8081, () => {
-    console.log("Server running on port 8081");
+const server = app.listen(8080, () => {
+    console.log("Server running on port 8080");
 });
 server.on("error", (error) => console.log(error));

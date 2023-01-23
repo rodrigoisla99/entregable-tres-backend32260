@@ -59,7 +59,7 @@ class ProductManager{
         if (resultadoValorBuscado == undefined){
             return console.log("Not Found");
         }else{
-            return console.log(resultadoValorBuscado);
+            return resultadoValorBuscado;
         } 
     }
 
