@@ -1,9 +1,35 @@
-[{"id":1,"title":"Frasco","description":"Transparente","price":1550,"thumbnail":"Sin Imagen","code":7430,"stock":25},
-
-{"id":2,"title":"Almohadon","description":"Gris","price":2700,"thumbnail":"Sin Imagen","code":103, "stock":5},
-
-{"id":3,"title":"Aceitero","description":"Personalziable","price":950,"thumbnail":"Sin Imagen","code":2023,"stock":13},
-
-{"id":3,"title":"Dispenser","description":"Personalziable","price":1450,"thumbnail":"Sin Imagen","code":205,"stock":17}
-
+[
+  {
+    "id": 0,
+    "title": "Tabla",
+    "description": "Personalziable",
+    "price": 1450,
+    "thumbnail": "Sin Imagen",
+    "code": 205,
+    "stock": 17,
+    "status": true,
+    "category": "casa"
+  },
+  {
+    "id": 2,
+    "title": "Almohadon",
+    "description": "Arena",
+    "price": 1250,
+    "thumbnail": "Sin Imagen",
+    "code": 705,
+    "stock": 9,
+    "status": true,
+    "category": "Casa"
+  },
+  {
+    "id": 3,
+    "title": "Frasco",
+    "description": "Transparente",
+    "price": 1250,
+    "thumbnail": "Sin Imagen",
+    "code": 105,
+    "stock": 26,
+    "status": true,
+    "category": "Casa"
+  }
 ]
